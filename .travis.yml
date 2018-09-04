@@ -1,3 +1,7 @@
 osx_image: xcode9.4
 language: swift
+install: carthage bootstrap
 xcode_project: RxActions.xcodeproj
+xcode_scheme:
+  - 'RxActions iOS'
+  - 'RxActions Mac'
