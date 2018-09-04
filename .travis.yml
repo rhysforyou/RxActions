@@ -1,8 +1,10 @@
 matrix:
   include:
-    - xcode_scheme: RxActions iOS
+    - name: RxActions iOS
+      xcode_scheme: RxActions iOS
       xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
-    - xcode_schem: RxActions Mac
+    - name: RxActions Mac
+      xcode_scheme: RxActions Mac
 
 osx_image: xcode9.4
 language: swift
