@@ -4,7 +4,7 @@ import RxSwift
 import RxCocoa
 
 extension Reactive where Base: UIButton {
-    var pressed: CocoaAction<UIButton>? {
+    public var pressed: CocoaAction<UIButton>? {
         get {
             var action: CocoaAction<UIButton>?
             action = objc_getAssociatedObject(base, &AssociatedKeys.action) as? CocoaAction<UIButton>

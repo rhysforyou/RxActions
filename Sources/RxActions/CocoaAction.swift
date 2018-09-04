@@ -2,7 +2,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-final class CocoaAction<Sender>: NSObject {
+public final class CocoaAction<Sender>: NSObject {
     /// The selector for message senders.
     public static var selector: Selector {
         return #selector(CocoaAction<Sender>.execute(_:))
