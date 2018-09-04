@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "570190A0213E19B6004455EC"
-               BuildableName = "RxActions_Mac.framework"
+               BuildableName = "RxActions.framework"
                BlueprintName = "RxActions Mac"
                ReferencedContainer = "container:RxActions.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "570190A8213E19B7004455EC"
-               BuildableName = "RxActionsTests Mac.xctest"
+               BuildableName = "RxActionsTests.xctest"
                BlueprintName = "RxActionsTests Mac"
                ReferencedContainer = "container:RxActions.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "570190A0213E19B6004455EC"
-            BuildableName = "RxActions_Mac.framework"
+            BuildableName = "RxActions.framework"
             BlueprintName = "RxActions Mac"
             ReferencedContainer = "container:RxActions.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "570190A0213E19B6004455EC"
-            BuildableName = "RxActions_Mac.framework"
+            BuildableName = "RxActions.framework"
             BlueprintName = "RxActions Mac"
             ReferencedContainer = "container:RxActions.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "570190A0213E19B6004455EC"
-            BuildableName = "RxActions_Mac.framework"
+            BuildableName = "RxActions.framework"
             BlueprintName = "RxActions Mac"
             ReferencedContainer = "container:RxActions.xcodeproj">
          </BuildableReference>
