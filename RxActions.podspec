@@ -23,7 +23,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "8.0"
   spec.osx.deployment_target = "10.9"
 
-  spec.swift_version = "4.1"
+  spec.swift_version = "4.2"
 
   spec.source = { :git => "https://github.com/rhysforyou/RxActions.git", :tag => "v#{spec.version}" }
 

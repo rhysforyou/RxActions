@@ -1,6 +1,11 @@
 # RxActions
 
-[![Travis (.org)](https://img.shields.io/travis/rhysforyou/RxActions.svg?style=flat-square)](https://travis-ci.org/rhysforyou/RxActions) [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/rhysforyou/RxActions/blob/master/LICENSE) ![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-blue.svg?style=flat-square) ![Swift Package Manager Compatible](https://img.shields.io/badge/swiftpm-compatible-blue.svg?style=flat-square) ![Swift Package Manager Compatible](https://img.shields.io/badge/cocoapods-compatible-blue.svg?style=flat-square)
+[![Travis (.org)](https://img.shields.io/travis/rhysforyou/RxActions.svg?style=flat-square)](https://travis-ci.org/rhysforyou/RxActions)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/rhysforyou/RxActions/blob/master/LICENSE)
+![Swift 4.2](https://img.shields.io/badge/swift-4.2-blue.svg?style=flat-square)
+![Carthage Compatible](https://img.shields.io/badge/carthage-compatible-blue.svg?style=flat-square)
+![Swift Package Manager Compatible](https://img.shields.io/badge/swiftpm-compatible-blue.svg?style=flat-square)
+![CocoaPods](https://img.shields.io/badge/cocoapods-compatible-blue.svg?style=flat-square)
 
 This framework can be used on top of [RxCocoa] to provide a new _Action_ primitive. An action will perform some work when given an _input_, producing an `Observable` which will generate zero or more values before either completing or terminating in an error.
 
