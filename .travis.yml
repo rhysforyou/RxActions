@@ -2,12 +2,13 @@ matrix:
   include:
     - name: RxActions iOS
       xcode_scheme: RxActions iOS
-      xcode_destination: platform=iOS Simulator,OS=11.4,name=iPhone X
+      xcode_destination: platform=iOS Simulator,OS=12.0,name=iPhone XS
+      install: "carthage bootstrap --platform iOS"
     - name: RxActions Mac
       xcode_scheme: RxActions Mac
+      install: "carthage bootstrap --platform Mac"
 
 osx_image: xcode10
 
 language: swift
-install: carthage bootstrap
 xcode_project: RxActions.xcodeproj
