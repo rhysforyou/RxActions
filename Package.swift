@@ -12,7 +12,7 @@ let package = Package(
             targets: ["RxActions"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", "4.0.0" ..< "5.0.0"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", "4.3.0" ..< "5.0.0"),
         .package(url: "https://github.com/Quick/Quick.git", "1.3.0" ..< "2.0.0"),
         .package(url: "https://github.com/Quick/Nimble.git", "7.0.0" ..< "8.0.0"),
     ],

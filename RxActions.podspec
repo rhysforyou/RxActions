@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name = "RxActions"
-  spec.version = "0.0.2"
+  spec.version = "0.1.0"
   spec.summary = "Helpful primitives for modelling UI actions in RxSwift"
 
   spec.description  = <<~DESC
@@ -31,7 +31,7 @@ Pod::Spec.new do |spec|
 
   spec.requires_arc = true
 
-  spec.dependency "RxSwift", "~> 4.2"
-  spec.dependency "RxCocoa", "~> 4.2"
+  spec.dependency "RxSwift", "~> 4.3"
+  spec.dependency "RxCocoa", "~> 4.3"
 
 end
