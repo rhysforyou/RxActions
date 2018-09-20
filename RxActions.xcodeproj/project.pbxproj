@@ -50,6 +50,14 @@
 		5773E7BA2153914600C5C511 /* RxCocoa.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 57750D1F215372AB002F796E /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5773E7BB2153914600C5C511 /* RxSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 57750D1C215372AB002F796E /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5773E7BC2153914600C5C511 /* RxTest.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 57750D1E215372AB002F796E /* RxTest.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5773E7CD215391B600C5C511 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7CB215391B600C5C511 /* RxCocoa.framework */; };
+		5773E7CE215391B600C5C511 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5773E7CC215391B600C5C511 /* RxSwift.framework */; };
+		5773E7CF215391C800C5C511 /* UIButton+RxActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FAF213E16A400EAE434 /* UIButton+RxActions.swift */; };
+		5773E7D0215391C800C5C511 /* NSObject+RxActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FB0213E16A400EAE434 /* NSObject+RxActions.swift */; };
+		5773E7D1215391C800C5C511 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FAB213E16A400EAE434 /* Action.swift */; };
+		5773E7D2215391C800C5C511 /* ActionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FAC213E16A400EAE434 /* ActionError.swift */; };
+		5773E7D3215391C800C5C511 /* CocoaAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FAD213E16A400EAE434 /* CocoaAction.swift */; };
+		5773E7D4215391CB00C5C511 /* RxActions.h in Headers */ = {isa = PBXBuildFile; fileRef = 57887F92213E15EB00EAE434 /* RxActions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57750D05215370C5002F796E /* RxActions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57750CFC215370C4002F796E /* RxActions.framework */; };
 		57750D1321537238002F796E /* UIButton+RxActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FAF213E16A400EAE434 /* UIButton+RxActions.swift */; };
 		57750D1421537238002F796E /* NSObject+RxActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57887FB0213E16A400EAE434 /* NSObject+RxActions.swift */; };
@@ -167,6 +175,9 @@
 		570190A9213E19B7004455EC /* RxActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		570190C0213E1C53004455EC /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Quick.framework; sourceTree = "<group>"; };
 		570190C1213E1C54004455EC /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Nimble.framework; sourceTree = "<group>"; };
+		5773E7C22153916D00C5C511 /* RxActions_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxActions_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5773E7CB215391B600C5C511 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = "<group>"; };
+		5773E7CC215391B600C5C511 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
 		57750CFC215370C4002F796E /* RxActions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RxActions.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57750D04215370C5002F796E /* RxActionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxActionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57750D1C215372AB002F796E /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RxSwift.framework; sourceTree = "<group>"; };
@@ -209,6 +220,15 @@
 				5700785C213E40280057381D /* RxTest.framework in Frameworks */,
 				5700785D213E40280057381D /* RxCocoa.framework in Frameworks */,
 				5700785B213E40280057381D /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7BF2153916D00C5C511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7CE215391B600C5C511 /* RxSwift.framework in Frameworks */,
+				5773E7CD215391B600C5C511 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +309,16 @@
 			path = Carthage/Build/Mac;
 			sourceTree = "<group>";
 		};
+		5773E7CA2153918600C5C511 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				5773E7CB215391B600C5C511 /* RxCocoa.framework */,
+				5773E7CC215391B600C5C511 /* RxSwift.framework */,
+			);
+			name = watchOS;
+			path = Carthage/Build/watchOS;
+			sourceTree = "<group>";
+		};
 		57750D1B21537271002F796E /* tvOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +352,7 @@
 				570190A9213E19B7004455EC /* RxActionsTests.xctest */,
 				57750CFC215370C4002F796E /* RxActions.framework */,
 				57750D04215370C5002F796E /* RxActionsTests.xctest */,
+				5773E7C22153916D00C5C511 /* RxActions_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -366,6 +397,7 @@
 				5701907C213E1733004455EC /* Mac */,
 				5701905F213E171D004455EC /* iOS */,
 				57750D1B21537271002F796E /* tvOS */,
+				5773E7CA2153918600C5C511 /* watchOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -378,6 +410,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				570190BB213E19C7004455EC /* RxActions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7BD2153916D00C5C511 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7D4215391CB00C5C511 /* RxActions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +476,24 @@
 			productName = RxActionsTests;
 			productReference = 570190A9213E19B7004455EC /* RxActionsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5773E7C12153916D00C5C511 /* RxActions watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5773E7C72153916D00C5C511 /* Build configuration list for PBXNativeTarget "RxActions watchOS" */;
+			buildPhases = (
+				5773E7BD2153916D00C5C511 /* Headers */,
+				5773E7BE2153916D00C5C511 /* Sources */,
+				5773E7BF2153916D00C5C511 /* Frameworks */,
+				5773E7C02153916D00C5C511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RxActions watchOS";
+			productName = "RxActions watchOS";
+			productReference = 5773E7C22153916D00C5C511 /* RxActions_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		57750CFB215370C4002F796E /* RxActions tvOS */ = {
 			isa = PBXNativeTarget;
@@ -527,6 +585,9 @@
 					570190A8213E19B7004455EC = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
+					5773E7C12153916D00C5C511 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 					57750CFB215370C4002F796E = {
 						CreatedOnToolsVersion = 10.0;
 					};
@@ -561,6 +622,7 @@
 				57887F97213E15EC00EAE434 /* RxActionsTests iOS */,
 				57750CFB215370C4002F796E /* RxActions tvOS */,
 				57750D03215370C5002F796E /* RxActionsTests tvOS */,
+				5773E7C12153916D00C5C511 /* RxActions watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -574,6 +636,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		570190A7213E19B7004455EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7C02153916D00C5C511 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -628,6 +697,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				57007855213E400A0057381D /* ActionSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5773E7BE2153916D00C5C511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5773E7D3215391C800C5C511 /* CocoaAction.swift in Sources */,
+				5773E7D2215391C800C5C511 /* ActionError.swift in Sources */,
+				5773E7CF215391C800C5C511 /* UIButton+RxActions.swift in Sources */,
+				5773E7D1215391C800C5C511 /* Action.swift in Sources */,
+				5773E7D0215391C800C5C511 /* NSObject+RxActions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -797,6 +878,73 @@
 			};
 			name = Release;
 		};
+		5773E7C82153916D00C5C511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Sources/RxActions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowell.RxActions-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		5773E7C92153916D00C5C511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 6752H6VL8N;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = Sources/RxActions/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpowell.RxActions-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
 		57750D0E215370C5002F796E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -808,7 +956,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Tests/RxActionsTests/Info.plist;
+				INFOPLIST_FILE = Sources/RxActions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -837,7 +985,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 				);
-				INFOPLIST_FILE = Tests/RxActionsTests/Info.plist;
+				INFOPLIST_FILE = Sources/RxActions/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1147,6 +1295,15 @@
 			buildConfigurations = (
 				570190B6213E19B7004455EC /* Debug */,
 				570190B7213E19B7004455EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5773E7C72153916D00C5C511 /* Build configuration list for PBXNativeTarget "RxActions watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5773E7C82153916D00C5C511 /* Debug */,
+				5773E7C92153916D00C5C511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
